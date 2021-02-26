@@ -12,9 +12,13 @@ const Pagination = ({ dataPerPage, totalData, paginate }) => {
         {pageNumbers.map((number) => (
           <ul>
             <li key={number}>
-              <a className="menu-pagination-option" onClick={() => paginate(number)} href="!#">
+              <spam
+                style={{ cursor: `pointer` }}
+                className="menu-pagination-option"
+                onClick={() => paginate(number)}
+              >
                 {number}
-              </a>
+              </spam>
             </li>
           </ul>
         ))}
